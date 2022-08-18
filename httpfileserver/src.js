@@ -1,0 +1,1 @@
+<h1>Inside public other</h1>
