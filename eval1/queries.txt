@@ -1,0 +1,9 @@
+1.	db.userdata.find({gender : “Male”});
+2.	 db.userdata.find({id : {$mod : [2,0]}});
+3.	 db.userdata.find({native : "Japan"})
+4.	db.userdata.find({gender : "Female",native : "India"})
+5.	 db.userdata.find({age : {$gt:25}})
+6.	db.userdata.find({age : {$lt : 50}, native : "United States"})
+7.	db.userdata.find({ relocate_to: "France" }).count();
+8.	db.userdata.find({native : "United States" , relocate_to : "Russia"}).sort({age :1})
+9.	db.userdata.find().sort({family_members : 1}).sort({age : -1})
