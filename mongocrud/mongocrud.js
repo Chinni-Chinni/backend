@@ -1,6 +1,3 @@
-1.db.createCollection("userdata");
-Queries:
-
 db.userdata.find({ gender: “Male” });
 db.userdata.find({ id: { $mod: [2, 0] } });
 db.userdata.find({ native: "Japan" })
