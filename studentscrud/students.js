@@ -9,3 +9,7 @@ db.students_marks.find({class: "V"}).sort({maths : -1}).limit(3);
 db.students_marks.find({class : "I"}).sort({science : 1}).limit(5);
 db.students_marks.find({section : "A",maths : {$lt : 50},science : {$lt : 50},english : {$lt : 50}}).count()
 db.students_marks.find({section : "C",maths : {$gt :75},science : {$gt :75},english : {$gt : 75}})
+db.students_marks.find().sort({maths : 1}).skip(2).limit(10)
+db.students_marks.find().sort({science : -1}).skip(4).limit(20)
+db.students_marks.find({gender : "Female"}).sort({maths : 1 , science : 1}).skip(3).limit(5)
+db.students_marks.find({gender : "Male"}).sort({maths :-1 , science : -1,english : -1}).skip(2).limit(5)
